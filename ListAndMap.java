@@ -21,14 +21,14 @@ public class ListAndMap {
 
 		System.out.println("---------------");
 
-		Map<String, Integer> vegitables = new LinkedHashMap<>();
-		vegitables.put("トマト", 200);
-		vegitables.put("にんじん", 100);
-		vegitables.put("たまねぎ", 50);
-		vegitables.put("かぼちゃ", 300);
+		Map<String, Integer> vegetables = new LinkedHashMap<>();
+		vegetables.put("トマト", 200);
+		vegetables.put("にんじん", 100);
+		vegetables.put("たまねぎ", 50);
+		vegetables.put("かぼちゃ", 300);
 
-		for (Map.Entry<String, Integer> vegitable : vegitables.entrySet()) {
-			System.out.println(vegitable.getKey() + "：" + vegitable.getValue() + "円");
+		for (Map.Entry<String, Integer> vegetable : vegetables.entrySet()) {
+			System.out.println(vegetable.getKey() + "：" + vegetable.getValue() + "円");
 		}
 
 	}

@@ -19,7 +19,7 @@ public class ExceptionSample {
 
 	public static Integer getNumber(Integer i) throws Exception {
 		if (i == null) {
-			throw new Exception();
+			throw new Exception("変数iはnullを許容しません");
 		}
 		return i;
 	}

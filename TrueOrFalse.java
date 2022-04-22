@@ -3,16 +3,12 @@ package lesson2;
 
 public class TrueOrFalse {
 
-	public static void main(String[] args) {
-		try {
-			int number = checkNumber(3);
-			if (number == 0) {
-				System.out.println("偽");
-			} else if (number == 1) {
-				System.out.println("真");
-			}
-		} catch (Exception e) {
-			System.out.println("0または1を入力してください");
+	public static void main(String[] args) throws Exception {
+		int number = checkNumber(3);
+		if (number == 0) {
+			System.out.println("偽");
+		} else if (number == 1) {
+			System.out.println("真");
 		}
 
 	}

@@ -13,10 +13,8 @@ public class AddNumbers {
 		}
 		System.out.println(number);
 
-		// 修正1 IntStreamを使用して計算
 		System.out.println(IntStream.rangeClosed(0, 10).sum());
 
-		// 修正2 計算量をO(1)に
 		System.out.println(getSum(1, 10));
 
 	}

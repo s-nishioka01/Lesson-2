@@ -4,20 +4,22 @@ package lesson2;
 public class TrueOrFalse {
 
 	public static void main(String[] args) throws Exception {
-		int number = checkNumber(3);
-		if (number == 0) {
-			System.out.println("偽");
-		} else if (number == 1) {
+		if (isBooleanNumber(1)) {
 			System.out.println("真");
+		} else {
+			System.out.println("偽");
 		}
 
 	}
 
-	public static int checkNumber(int number) throws Exception {
-		if (!(number == 0 || number == 1)) {
+	public static Boolean isBooleanNumber(int number) throws Exception {
+		if (number == 1) {
+			return true;
+		} else if (number == 0) {
+			return false;
+		} else {
 			throw new Exception("値が有効ではありません");
 		}
-		return number;
 	}
 
 }

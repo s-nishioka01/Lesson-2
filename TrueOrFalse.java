@@ -4,7 +4,7 @@ package lesson2;
 public class TrueOrFalse {
 
 	public static void main(String[] args) throws Exception {
-		if (isTrueOrFalse(1)) {
+		if (isTrueOrFalse(3)) {
 			System.out.println("真");
 		} else {
 			System.out.println("偽");

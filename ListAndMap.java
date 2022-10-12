@@ -21,6 +21,10 @@ public class ListAndMap {
 
 		System.out.println("---------------");
 
+		fruits.forEach((fruit) -> System.out.println(fruit));
+
+		System.out.println("---------------");
+
 		Map<String, Integer> vegetables = new LinkedHashMap<>();
 		vegetables.put("トマト", 200);
 		vegetables.put("にんじん", 100);
@@ -30,6 +34,10 @@ public class ListAndMap {
 		for (Map.Entry<String, Integer> vegetable : vegetables.entrySet()) {
 			System.out.println(vegetable.getKey() + "：" + vegetable.getValue() + "円");
 		}
+
+		System.out.println("---------------");
+
+		vegetables.forEach((key, value) -> System.out.println(key + "：" + value + "円"));
 
 	}
 

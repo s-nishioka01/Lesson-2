@@ -4,12 +4,15 @@ package lesson2;
 public class TrueOrFalse {
 
 	public static void main(String[] args) throws Exception {
-		if (isTrueOrFalse(3)) {
-			System.out.println("真");
-		} else {
-			System.out.println("偽");
+		try {
+			if (isTrueOrFalse(3)) {
+				System.out.println("真");
+			} else {
+				System.out.println("偽");
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
-
 	}
 
 	public static boolean isTrueOrFalse(int number) throws Exception {
